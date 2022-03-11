@@ -107,3 +107,30 @@ var swiper = new Swiper(".featured-slider", {
         },
     },
 });
+
+var swiper = new Swiper(".reviews-slider", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    grapCursor: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 9500,
+        disableOnInteration: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+    },
+});
